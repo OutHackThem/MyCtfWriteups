@@ -1,6 +1,8 @@
 @import "rouge-base16-dark";
 @import "default_colors";
 
+@import url('https://fonts.googleapis.com/css?family=Anonymous+Pro');
+
 $body-background: $cod-grey !default;
 $body-foreground: $gallery !default;
 $header: $conifer !default;
@@ -14,7 +16,7 @@ body {
   color: $body-foreground;
   font-size: 16px;
   line-height: 1.5;
-  font-family: Monaco, "Bitstream Vera Sans Mono", "Lucida Console", Terminal, monospace;
+  font-family:'Anonymous Pro', monospace, Monaco, "Bitstream Vera Sans Mono", "Lucida Console", Terminal, monospace;
 }
 
 /* General & 'Reset' Stuff */
