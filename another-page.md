@@ -1,5 +1,6 @@
 ---
 layout: default
+permalink: /kingming
 ---
 
 ## Welcome to another page
