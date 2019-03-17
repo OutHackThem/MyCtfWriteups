@@ -6,7 +6,7 @@
 
 header, nav, main, footer {
 	margin: 15px;
-	border-bottom: 3px dashed rgba(255,255,255,0.5);
+	border-bottom: 1px dashed rgb(170, 92, 249);
 }
 
 header, nav {
@@ -24,6 +24,7 @@ header, nav {
 
 nav ul {
 	display: block;
+	text-shadow: 0 0 3px #FF0000;
 	padding: 0;
 }
 
@@ -35,7 +36,7 @@ nav ul li {
 
 nav ul li a:hover {
 	font-weight: bold;
-	font-size:40px;
+	font-size:16px;
 }
 
 .highlighter-rouge {
