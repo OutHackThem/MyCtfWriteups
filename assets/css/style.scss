@@ -1,7 +1,7 @@
 ---
 ---
 
-@import 'jekyll-theme-hacker';
+@import '{{ site.theme }}';
 
 
 header, nav, main, footer {
@@ -32,10 +32,6 @@ nav ul li {
 	padding-left: 10px;
 }
 
-nav ul li a {
-	text-decoration: none;
-	color: rgba(255,255,255,1);
-}
 
 nav ul li a:hover {
 	font-weight: bold;
