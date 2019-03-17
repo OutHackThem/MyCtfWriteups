@@ -3,15 +3,6 @@
 
 @import 'jekyll-theme-hacker';
 
-body {
-	background-color: rgba(0,0,0,0.97);
-	color: rgba(255,255,255,0.7);
-	padding: 5px;
-	margin: auto;
-	width: 80%;
-	border: 1px dashed rgba(255,255,255,0.7);
-	font-family: "Open Sans";
-}
 
 header, nav, main, footer {
 	margin: 15px;
@@ -48,20 +39,6 @@ nav ul li a {
 
 nav ul li a:hover {
 	font-weight: bold;
-}
-
-a {
-	text-decoration: none;
-	color: #2A6EA4;
-	font-weight: bold;
-}
-
-a:hover {
-	text-decoration: underline;
-}
-
-pre {
-	font-family: monospace;
 }
 
 .highlighter-rouge {
