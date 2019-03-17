@@ -1,5 +1,8 @@
 ---
 layout: post
+title: Welcome to my blog
+date: 2019-03-17
+author: th3-3inst3in
 ---
 
 # Welcome to my blog
