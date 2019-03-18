@@ -5,7 +5,7 @@ date: 2019-03-11
 author: th3-3inst3in
 categories: overthewire
 tags: [web,overthewire]
-permalink: /natas-10-&-11
+
 ---
 
 ## Natas 10
