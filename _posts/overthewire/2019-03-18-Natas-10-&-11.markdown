@@ -1,11 +1,10 @@
 ---
 layout: post
-title: "Natas 10 & 11 Writeup"
+title: Natas 10 & 11 Writeup
 date: 2019-03-11
 author: th3-3inst3in
 categories: overthewire
 tags: [web,overthewire]
-
 ---
 
 ## Natas 10
