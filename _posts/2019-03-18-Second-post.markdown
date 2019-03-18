@@ -1,6 +1,6 @@
 ---
-title: Second post
-layout:post
+layout: post
+title: "My Second post"
 ---
 
 SOme content
