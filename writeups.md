@@ -11,7 +11,7 @@ permalink: /writeups
 <ul>
   {% for post in site.categories.overthewire %}
     <li>
-      <font size=2px>{{ page.date | date: "%-d %B %Y" }}</font><a href="{{ site.baseurl }}/{{ post.url }}">{{ post.title }}</a>
+      <font size=2px>{{ post.date | date: "%-d %B %Y" }}</font><a href="{{ site.baseurl }}/{{ post.url }}">{{ post.title }}</a>
     </li>
   {% endfor %}
 </ul>
