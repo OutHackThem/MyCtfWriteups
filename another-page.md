@@ -12,7 +12,7 @@ permalink: /about
   {% endfor %}
 </ul>
 
-<p>{{ site.baseurl }}</p>
+<p>{{ site.url }}{{ site.baseurl }}</p>
 _yay_
 
 [back](./)
