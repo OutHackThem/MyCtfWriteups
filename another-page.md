@@ -17,7 +17,7 @@ permalink: /about
 ### OverTheWire
 
 <ul>
-  {% for post in site.posts.overthewire %}
+  {% for post in site.categories.overthewire %}
     <li>
       <a href="{{ site.baseurl }}/{{ post.url }}">{{ post.title }}</a>
     </li>
