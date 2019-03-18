@@ -7,4 +7,5 @@ categories: overthewire
 ---
 [<--back]({{ site.url }}{{ site.baseurl }})
 <br>
-This is the writeup for the Over the wire Natas 11 and 12
+> This is the writeup of the Overtheview Natats level 10 
+>
