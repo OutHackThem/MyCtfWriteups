@@ -35,12 +35,13 @@ if($key != "") {
 ?>
 ```
 
-main thing to be noted here is the preg_match() function which looks at our input and if it sees <p>;|&</p> then it immediately throws an error saying Input contians illegal characters
+
+main thing to be noted here is the preg_match() function which looks at our input and if it sees then it immediately throws an error saying Input contians illegal characters
 
 Since our input is going in the passthru() function and will be a part of the current grep command we can simply get the flag with the following payload.
 
 ```bash
-> .* /etc/natas_webpass/natas11
+.* /etc/natas_webpass/natas11
 ```
 
 ![flag](https://i.imgur.com/QmC4XyM.png)
