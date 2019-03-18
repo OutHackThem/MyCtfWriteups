@@ -13,6 +13,17 @@ permalink: /about
 </ul>
 
 <p>{{ site.url }}{{ site.baseurl }}</p>
+
+### OverTheWire
+
+<ul>
+  {% for post in site.posts.overthewire %}
+    <li>
+      <a href="{{ site.baseurl }}/{{ post.url }}">{{ post.title }}</a>
+    </li>
+  {% endfor %}
+</ul>
+
 _yay_
 
 [back](./)
