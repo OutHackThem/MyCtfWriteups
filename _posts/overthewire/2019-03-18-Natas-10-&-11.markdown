@@ -5,7 +5,6 @@ date: 2019-03-18
 author: th3-3inst3in
 categories: overthewire
 ---
-[<--back]({{ site.url }}{{ site.baseurl }})
-<br>
+
 > This is the writeup of the Overtheview Natats level 10 
 >
