@@ -1,10 +1,14 @@
 ---
 layout: post
-title: Natas 11 & 12
-date: 2019-03-18
+title: Natas 10 & 11 Writeup
+date: 2019-03-11
 author: th3-3inst3in
 categories: overthewire
 ---
 
-> This is the writeup of the Overtheview Natats level 10 
->
+## Natas 10
+
+Visit this [link](http://natas10.natas.labs.overthewire.org/) to go to level 10 for which you’ll need the password from the previous level.
+You’ll land here 
+
+![natas10](https://themctfwriteups.files.wordpress.com/2019/03/image.png)
