@@ -26,4 +26,4 @@ permalink: /about
 
 _yay_
 
-[back](./)
+[back]({{ site.url }}{{ site.baseurl }})
