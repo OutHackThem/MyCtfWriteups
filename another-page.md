@@ -11,6 +11,8 @@ permalink: /about
     </li>
   {% endfor %}
 </ul>
+
+<p>{{ site.baseurl }}</p>
 _yay_
 
 [back](./)
