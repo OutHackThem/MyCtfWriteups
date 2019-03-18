@@ -1,5 +1,6 @@
 ---
 layout: default
+title: List of my Ctf Writeups by Categories
 permalink: /writeups
 ---
 
