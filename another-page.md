@@ -12,7 +12,7 @@ permalink: /about
   {% endfor %}
 </ul>
 
-<p>{{ site.url }}{{ site.baseurl }}</p>
+<p>{{ page.previous.url }}</p>
 
 ### OverTheWire
 
