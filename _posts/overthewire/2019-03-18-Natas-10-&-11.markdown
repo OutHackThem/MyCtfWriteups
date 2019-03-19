@@ -5,6 +5,7 @@ date: 2019-03-11
 author: th3-3inst3in
 categories: overthewire
 tags: [web,overthewire]
+permalink: themctfwriteups.com/:categories/:year/:date/:title
 ---
 
 ## Natas 10
