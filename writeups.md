@@ -18,7 +18,7 @@ permalink: /writeups
 
 _yay_
 
-
+<!-- 
 <ul>
   {% for post in site.posts %}
     <li>
@@ -26,3 +26,4 @@ _yay_
     </li>
   {% endfor %}
 </ul>
+ -->
