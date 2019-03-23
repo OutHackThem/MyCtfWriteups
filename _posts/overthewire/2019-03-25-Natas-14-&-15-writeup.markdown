@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Natas 14 & 15 writeup
-date: 2019-03-24
+date: 2019-03-25
 author: th3-3inst3in
 categories: overthewire
 tags: [web,overthewire]
