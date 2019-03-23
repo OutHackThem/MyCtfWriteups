@@ -81,11 +81,11 @@ if($data["showpassword"] == "yes") {
 
 ###### Lets go over this code and see how we can get to our flag
 
--First we have a xor_encrypt() function which takes in a value and xors that with a secret key
--loadData() function checks if cookies exist , if yes then it base64 decodes it xor_encrypt()s it tries to load the json object in to an array
-	-It also checks if certain certain conditions are met if yes then the value of the $mydata is updated
-	-Then it returns the value of $mydata
--Main thing to note is if the value of $data[‘showpassword’] is yes then it displays the flag
+- First we have a xor_encrypt() function which takes in a value and xors that with a secret key
+- loadData() function checks if cookies exist , if yes then it base64 decodes it xor_encrypt()s it tries to load the json object in to an array
+	- It also checks if certain certain conditions are met if yes then the value of the $mydata is updated
+	- Then it returns the value of $mydata
+- Main thing to note is if the value of $data[‘showpassword’] is yes then it displays the flag
 
 #### What is our objective ?
 
