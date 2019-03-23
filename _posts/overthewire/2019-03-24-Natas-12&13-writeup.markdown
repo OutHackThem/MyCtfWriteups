@@ -1,0 +1,35 @@
+---
+layout: post
+title: Natas 12 & 13 writeup
+date: 2019-03-24
+author: th3-3inst3in
+categories: overthewire
+tags: [web,overthewire]
+---
+
+## Natas 12
+
+Visit this [link](http://natas12.natas.labs.overthewire.org/) to go to level 11 for which you’ll need the password from the previous level.
+
+You'll land on a page where you can upload a file. Our objective here to upload a php file and get code execution.
+
+The problem is that even if you upload a php file it gets renamed in to a jpg file so we need to intercept the request and change the file extension.
+
+* First name a simple file with the following content
+
+```php
+<?php system($_GET['cmd'];) ?>
+```
+
+select the file and intercept the request and change the extenion to php as shown in the picture
+
+![intercept](https://mbilalrizwan.github.io/MyCtfWriteups/assets/images/overthewire/natas12interdept.png)
+
+After the file is uploaded you'll be given a link looking something like this 
+
+http://natas12.natas.labs.overthewire.org/upload/<random string>.php
+
+You now have code execution on the server and can simply get the flag with the folloing command
+
+
+![intercept](https://mbilalrizwan.github.io/MyCtfWriteups/assets/images/overthewire/natas12flag.png)
