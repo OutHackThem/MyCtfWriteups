@@ -1,0 +1,49 @@
+---
+layout: post
+title: Natas 14 & 15 writeup
+date: 2019-03-24
+author: th3-3inst3in
+categories: overthewire
+tags: [web,overthewire]
+---
+
+## Natas 14
+
+Visit this [link](http://natas14.natas.labs.overthewire.org/) to go to level 14 for which you’ll need the password from the previous level.
+
+Opening the link you'll see a form to enter username and password
+
+Entering the wrong username and password you get `Access denied!`
+
+View the code and you'll notice its vulnerable to sql injection
+
+
+```php
+<?
+if(array_key_exists("username", $_REQUEST)) {
+    $link = mysql_connect('localhost', 'natas14', '<censored>');
+    mysql_select_db('natas14', $link);
+    
+    $query = "SELECT * from users where username=\"".$_REQUEST["username"]."\" and password=\"".$_REQUEST["password"]."\"";
+    if(array_key_exists("debug", $_GET)) {
+        echo "Executing query: $query<br>";
+    }
+
+    if(mysql_num_rows(mysql_query($query, $link)) > 0) {
+            echo "Successful login! The password for natas15 is <censored><br>";
+    } else {
+            echo "Access denied!<br>";
+    }
+    mysql_close($link);
+} else {
+?> 
+
+```
+
+We can simply break the Qurey and get the passwrd by entering the following in to the username and password field
+
+`"or""="`
+
+Enter the above string in both the fields and we get the flag
+
+![14 flag](https://mbilalrizwan.github.io/MyCtfWriteups/assets/images/overthewire/natas14flag.png)

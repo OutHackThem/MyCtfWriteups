@@ -9,7 +9,7 @@ tags: [web,overthewire]
 
 ## Natas 12
 
-Visit this [link](http://natas12.natas.labs.overthewire.org/) to go to level 11 for which you’ll need the password from the previous level.
+Visit this [link](http://natas12.natas.labs.overthewire.org/) to go to level 12 for which you’ll need the password from the previous level.
 
 You'll land on a page where you can upload a file. Our objective here to upload a php file and get code execution.
 
