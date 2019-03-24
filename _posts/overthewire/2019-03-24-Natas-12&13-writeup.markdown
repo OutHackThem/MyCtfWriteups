@@ -11,7 +11,7 @@ tags: [web,overthewire]
 
 Visit this [link](http://natas12.natas.labs.overthewire.org/) to go to level 12 for which you’ll need the password from the previous level.
 
-You'll land on a page where you can upload a file. Our objective here to upload a php file and get code execution.
+You'll land on a page where you can upload a file. Our objective here is to upload a php file and get code execution.
 
 The problem is that even if you upload a php file it gets renamed in to a jpg file so we need to intercept the request and change the file extension.
 
@@ -61,7 +61,7 @@ The following python code can help bypass this check
 >>> fh.close()
 ```
 
-The above code basically makes a file which contains the passthru() function to execute commands on the server but the first few bytes of the file will make it seem like its a valid image and hense will bypass the check .
+The above code basically makes a file which contains the passthru() function to execute commands on the server but the first few bytes of the file will make it seem like its a valid image and hence will bypass the check .
 Upload the file and  vola we have your shell.
 
 ![13 flag](https://mbilalrizwan.github.io/MyCtfWriteups/assets/images/overthewire/natas13flag.png)
