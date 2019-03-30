@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Leviathan 1-8 Writeup
+title: Leviathan 1-7 Writeup
 date: 2019-03-30
 author: th3-3inst3in
 categories: overthewire
