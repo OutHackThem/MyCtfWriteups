@@ -24,7 +24,8 @@ You'll land in the home directory of user levathan0 quick _la -la_ you'll see a 
 
 ![lev1](https://mbilalrizwan.github.io/MyCtfWriteups/assets/images/overthewire/lev1.png))
 
-|:-------------|:------------------|:------|
+* * *
+
 
 ### Leviathan1
 
@@ -75,7 +76,7 @@ ougahZi8Ta
 ```
 
 
-|:-------------|:------------------|:------|
+* * *
 
 
 ### Leviathan2
@@ -148,6 +149,67 @@ leviathan2@leviathan:/tmp/mytempdir$
 Lets move on to the nex tone.
 
 
-|:-------------|:------------------|:------|
+* * *
+
 
 ## Leviathan3
+
+Using the same host + port  and password gotten from the last level login as user leviathan3.
+
+```bash
+
+leviathan3@leviathan:~$ ./level3
+Enter the password>
+bzzzzzzzzap. WRONG
+leviathan3@leviathan:~$ ltrace ./level3
+__libc_start_main(0x8048618, 1, 0xffffd794, 0x80486d0 <unfinished ...>
+strcmp("h0no33", "kakaka")                       = -1
+printf("Enter the password> ")                   = 20
+fgets(Enter the password> test
+"test\n", 256, 0xf7fc55a0)                 = 0xffffd5a0
+strcmp("test\n", "snlprintf\n")                  = 1
+puts("bzzzzzzzzap. WRONG"bzzzzzzzzap. WRONG
+)                       = 19
++++ exited (status 0) +++
+leviathan3@leviathan:~$ ./level3
+Enter the password> snlprintf
+[You've got shell]!
+$ cat /etc/leviathan_pass/leviathan4
+vuH0coox6m
+$
+
+```
+
+
+## leviathan4
+
+Using the same host + port  and password gotten from the last level login as user leviathan4.
+
+
+```bash
+leviathan4@leviathan:~$ ls -la
+total 24
+drwxr-xr-x  3 root root       4096 Oct 29 21:17 .
+drwxr-xr-x 10 root root       4096 Oct 29 21:17 ..
+-rw-r--r--  1 root root        220 May 15  2017 .bash_logout
+-rw-r--r--  1 root root       3526 May 15  2017 .bashrc
+-rw-r--r--  1 root root        675 May 15  2017 .profile
+dr-xr-x---  2 root leviathan4 4096 Oct 29 21:17 .trash
+leviathan4@leviathan:~$ cd .trash/
+leviathan4@leviathan:~/.trash$ ls
+bin
+
+leviathan4@leviathan:~/.trash$ ltrace ./bin
+__libc_start_main(0x80484bb, 1, 0xffffd774, 0x80485b0 <unfinished ...>
+fopen("/etc/leviathan_pass/leviathan5", "r")     = 0
++++ exited (status 255) +++
+
+```
+
+So looks like the binary returned is actully the key we just have to convert it in to  ascii I used the folloing [link](https://www.rapidtables.com/convert/number/binary-to-ascii.html)
+
+![Binary to ascii converion image](https://mbilalrizwan.github.io/MyCtfWriteups/assets/images/overthewire/lev4bin2ascii.png)
+
+
+* * *
+
