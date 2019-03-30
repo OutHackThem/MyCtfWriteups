@@ -54,4 +54,4 @@ Enter the above string in both the fields and we get the flag
 
 Simple blind sql injection exploitation you'll get the following flag 
 
-![15 flag](https://mbilalrizwan.github.io/MyCtfWriteups/assets/images/overthewire/natas15flag.png))
+![15 flag](https://mbilalrizwan.github.io/MyCtfWriteups/assets/images/overthewire/natas15flag.png)
