@@ -11,7 +11,7 @@ tags: [web,overthewire]
 ## Natas 20
 
 Starting the Challenge off  Where you have to enter a name.
-Upon viewing the code it is apparently clear that we have to login as the admin.This can be understood by viewing the _print_credentials()_ function which has a condition of `$_SESSION["admin"] == 1`
+Upon viewing the code it is apparently clear that we have to login as the admin.This can be understood by viewing the _print_credentials()_ function which has a condition of $_SESSION["admin"] == 1
 
 Since the code for this challenge is a bit long I  won't be including all of it just little snippets
 
