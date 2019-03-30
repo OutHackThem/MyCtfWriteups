@@ -15,7 +15,7 @@ Upon viewing the code it is apparently clear that we have to login as the admin.
 Since the code for this challenge is a bit long I  won't be including all of it just little snippets
 
 ```php
-function print_credentials() { /* {{{ */
+function print_credentials() {
     if($\_SESSION and array_key_exists("admin", $_SESSION) and $_SESSION["admin"] == 1) {
     print "You are an admin. The credentials for the next level are:<br>";
     print "<pre>Username: natas21\n";
