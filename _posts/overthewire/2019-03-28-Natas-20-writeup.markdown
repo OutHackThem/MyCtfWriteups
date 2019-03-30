@@ -7,17 +7,16 @@ categories: overthewire
 tags: [web,overthewire]
 ---
 
-
 ## Natas 20
 
 Starting the Challenge off  Where you have to enter a name.
-Upon viewing the code it is apparently clear that we have to login as the admin.This can be understood by viewing the   _\_print\_credentials()\__ function which has a condition of _$\_SESSION["admin"] == 1_.
+Upon viewing the code it is apparently clear that we have to login as the admin.This can be understood by viewing the  \_print\_credentials()\_ function which has a condition of $\_SESSION["admin"] == 1.
 
 Since the code for this challenge is a bit long I  won't be including all of it just little snippets
 
 ```php
 function print_credentials() { /* {{{ */
-    if($_SESSION and array_key_exists("admin", $_SESSION) and $_SESSION["admin"] == 1) {
+    if($\_SESSION and array_key_exists("admin", $_SESSION) and $_SESSION["admin"] == 1) {
     print "You are an admin. The credentials for the next level are:<br>";
     print "<pre>Username: natas21\n";
     print "Password: <censored></pre>";
