@@ -211,14 +211,21 @@ When we define a length for a datatype in mysql , mysql doesn't take anything lo
 So essentially if we have  a datatype of VARCHAR of length 10 then
 
 1) "abc"  
-2)"abc <more then 10 spaces> anything_after_this" 
+2) "abc <more then 10 spaces> anything_after_this" 
 
-1 is equal to 2 
-1 == 2
+* 1 is equal to 2
+* 1 == 2
 
-If you put more spaces then the allowed length of a datatype then mysql will truncate everything after the length exceeds so  number 2 becomes "abc ".
+If you put more spaces then the allowed length of a datatype then mysql will [truncate](https://dictionary.cambridge.org/dictionary/english/truncate) everything after the length is exceeded so  number 2 becomes "abc ".
 
 Isn't that cool ? 
 
 How can you exploit this ? 
+
+Imagine You can signup on a website and it displays some sensitive content on the basis of username. There is a user abc already signed up on the site , what you can do is create a user named "abc <followed by enough spaces to bypass the length defined > something" and when you login with your user the website will return all the data of "abc" as well.
+(This may not work every where so simply but it does provide us with an interesting attack vector.)
+
+
+* * *
+Lets apply the above learnt trick on our Challenge.
 
