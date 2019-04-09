@@ -9,7 +9,7 @@ tags: [web,overthewire]
 
 ### An interesting abuse case for a feature in mysql
 > Natas 27 was an amazing challenge , I had alot of fun doing it and this writeup might contain something new and interesting for most of you.
->
+> It's bit of a long post so grab something to drink while you read- also you might wanna try doing this your self as you read.
 
 
 Opening the challenge and clicking on View Sourcecode gives us the following
@@ -202,3 +202,23 @@ Just to clarify the scenario a bit more I'll summerize everything that has happe
 	- `abc`
 	- `abc <spaces> something`
 	- `abc <spaces>    xyz`
+4. When I run the query  SELECT * FROM 'users' WHERE username='abc'; all 3 entries get selected eventhough that shouldn't happen. Only the first one should get selected.
+
+##### So whats really happening here ?
+
+Remember at the start when we created a column to enter usernames of type _VARCHAR_  and length 10 ?, well there is a bug in mySQL not really a bug but a feature that we can abuse .
+When we define a length for a datatype in mysql , mysql doesn't take anything longer then the length defined in to account. 
+So essentially if we have  a datatype of VARCHAR of length 10 then
+
+1) "abc"  
+2)"abc <more then 10 spaces> anything_after_this" 
+
+1 is equal to 2 
+1 == 2
+
+If you put more spaces then the allowed length of a datatype then mysql will truncate everything after the length exceeds so  number 2 becomes "abc ".
+
+Isn't that cool ? 
+
+How can you exploit this ? 
+
