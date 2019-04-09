@@ -250,5 +250,3 @@ Here is your data:
 Array ( [username] => natas28 [password] => JWwR438wkgTsNKBbcJoowyysdM82YjeF ) 
 
 ```
-
-Got some questions ? [Contact me](https://themctfwriteups.com/Contact)
