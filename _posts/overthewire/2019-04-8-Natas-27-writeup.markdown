@@ -163,7 +163,7 @@ Query:
 * SELECT * FROM 'users' WHERE username='abc';
 > abc
 
-The result from the last query is `abc` . Now lets add another entry in the db `"abc \ \ \ \ \ something"` , just to be clear thats abc followed by about 12 spaces and then the word something.
+The result from the last query is `abc` . Now lets add another entry in the db <pre>`abc            something`</pre> , just to be clear thats abc followed by about 12 spaces and then the word something.
 
 
 ![entry2](https://mbilalrizwan.github.io/MyCtfWriteups/assets/images/overthewire/natas27/add2.png)
@@ -180,4 +180,4 @@ Query:
 
 And now the result contains 2 `abc`.
 
-If you look back we added 2 things in our database one a simple `abc` and another `abc          something` . The WHERE statement shouldn't have selected the second entry right ? , cause that string is copletely different from `abc`.
+If you look back we added 2 things in our database one a simple `abc` and another `abc <12 spaces > omething` . The WHERE statement shouldn't have selected the second entry right ? , cause that string is copletely different from `abc`.
