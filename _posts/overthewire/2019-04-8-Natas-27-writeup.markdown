@@ -163,7 +163,7 @@ Query:
 * SELECT * FROM 'users' WHERE username='abc';
 > abc
 
-The result from the last query is `abc` . Now lets add another entry in the db <pre>`abc            something`</pre> , just to be clear thats abc followed by about 12 spaces and then the word something.
+The result from the last query is `abc` . Now lets add another entry in the db <pre>"abc            something"</pre> , just to be clear thats abc followed by about 12 spaces and then the word something.
 
 
 ![entry2](https://mbilalrizwan.github.io/MyCtfWriteups/assets/images/overthewire/natas27/add2.png)
