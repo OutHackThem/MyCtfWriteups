@@ -235,7 +235,7 @@ Binary file was reading content of /tmp/file.log I just created a soft link of t
 
 ## leviathan6
 
-Just have to bruteforce a 4 digit pin in this challenge
+Just have to bruteforce a 4 digit pin in this challenge.
 
 ```bash
 leviathan6@leviathan:~$ ls
