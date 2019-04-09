@@ -222,10 +222,33 @@ Isn't that cool ?
 
 How can you exploit this ? 
 
-Imagine You can signup on a website and it displays some sensitive content on the basis of username. There is a user abc already signed up on the site , what you can do is create a user named "abc <followed by enough spaces to bypass the length defined > something" and when you login with your user the website will return all the data of "abc" as well.
+Imagine You can signup on a website and it displays some sensitive content on the basis of username. There is a user abc already signed up on the site , what you can do is create a user named "abc followed by enough spaces to bypass the length defined  xyz" and when you login with your user the website will return all the data of "abc" as well.
 (This may not work every where so simply but it does provide us with an interesting attack vector.)
 
 
 * * *
-Lets apply the above learnt trick on our Challenge.
+##### Lets apply the above learnt trick on our Challenge.
 
+To solve this challenge we need to login as the user natas28 but we don't have its password - you can simply try to login with natas28 and some wrongpass to verify that user actually exists.
+
+Lets create a user named 
+`natas28+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++something` and password `anypass`
+
+
+![entry2](https://mbilalrizwan.github.io/MyCtfWriteups/assets/images/overthewire/natas27/createnatas28.png)
+
+
+Now the magical part
+
+Just login with username `natas28` , password `anypass`  and VOLA !! 
+
+![entry2](https://mbilalrizwan.github.io/MyCtfWriteups/assets/images/overthewire/natas27/loginnatas28.png)
+
+```bash
+Welcome natas28!
+Here is your data:
+Array ( [username] => natas28 [password] => JWwR438wkgTsNKBbcJoowyysdM82YjeF ) 
+
+```
+
+Got some questions ? [Contact me](https://themctfwriteups.com/Contact)
