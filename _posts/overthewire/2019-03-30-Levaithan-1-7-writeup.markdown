@@ -22,7 +22,7 @@ Login to the server with the following ssh creds
 
 You'll land in the home directory of user levathan0 quick _la -la_ you'll see a **.backup** folder cd in to it and you'll notice a file named _bookmarks.html_ cat that and grep for passowrd and you'll find the password for the next level.
 
-![lev1](https://mbilalrizwan.github.io/MyCtfWriteups/assets/images/overthewire/lev1.png)
+![lev1](https://th3-3inst3in.github.io/MyCtfWriteups/assets/images/overthewire/lev1.png)
 
 * * *
 
@@ -208,7 +208,7 @@ fopen("/etc/leviathan_pass/leviathan5", "r")     = 0
 
 So looks like the binary returned is actully the key we just have to convert it in to  ascii I used the folloing [link](https://www.rapidtables.com/convert/number/binary-to-ascii.html)
 
-![Binary to ascii converion image](https://mbilalrizwan.github.io/MyCtfWriteups/assets/images/overthewire/lev4bin2ascii.png)
+![Binary to ascii converion image](https://th3-3inst3in.github.io/MyCtfWriteups/assets/images/overthewire/lev4bin2ascii.png)
 
 
 * * *
