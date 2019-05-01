@@ -140,21 +140,21 @@ The first function validates both the username & the password. The second only v
 I assume most of you have worked with mysql. Lets create a simple database called `testdb` in phpmyAdmin.
 
 
-![create db](https://th3-3inst3in.github.io/MyCtfWriteups/assets/images/overthewire/natas27/createuser.png)
+![create db]({{ site.giturl }}/MyCtfWriteups/assets/images/overthewire/natas27/createuser.png)
 
 
 Lets add a table named `users` & add a column in it called username of type _VARCHAR_ of length **10**.
 
-![create table](https://th3-3inst3in.github.io/MyCtfWriteups/assets/images/overthewire/natas27/createtable.png)
+![create table]({{ site.giturl }}/MyCtfWriteups/assets/images/overthewire/natas27/createtable.png)
 
 .
 
-![create column](https://th3-3inst3in.github.io/MyCtfWriteups/assets/images/overthewire/natas27/createcolumn.png)
+![create column]({{ site.giturl }}/MyCtfWriteups/assets/images/overthewire/natas27/createcolumn.png)
 
 
 Now lets add a username "abc" in it.
 
-![entry1](https://th3-3inst3in.github.io/MyCtfWriteups/assets/images/overthewire/natas27/add1.png)
+![entry1]({{ site.giturl }}/MyCtfWriteups/assets/images/overthewire/natas27/add1.png)
 
 
 Now lets select the newly created username.
@@ -167,7 +167,7 @@ Query:
 The result from the last query is `abc` . Now lets add another entry in the db `abc   <12 spaces>    something` , just to be clear thats abc followed by about 12 spaces and then the word something.
 
 
-![entry2](https://th3-3inst3in.github.io/MyCtfWriteups/assets/images/overthewire/natas27/add2.png)
+![entry2]({{ site.giturl }}/MyCtfWriteups/assets/images/overthewire/natas27/add2.png)
 
 
 Run the same query as before 
@@ -236,14 +236,14 @@ Lets create a user named
 `natas28+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++something` and password `anypass`
 
 
-![entry2](https://th3-3inst3in.github.io/MyCtfWriteups/assets/images/overthewire/natas27/createnatas28.png)
+![entry2]({{ site.giturl }}/MyCtfWriteups/assets/images/overthewire/natas27/createnatas28.png)
 
 
 Now the magical part
 
 Just login with username `natas28` , password `anypass`  and VOLA !! 
 
-![entry2](https://th3-3inst3in.github.io/MyCtfWriteups/assets/images/overthewire/natas27/loginnatas28.png)
+![entry2]({{ site.giturl }}/MyCtfWriteups/assets/images/overthewire/natas27/loginnatas28.png)
 
 ```bash
 Welcome natas28!

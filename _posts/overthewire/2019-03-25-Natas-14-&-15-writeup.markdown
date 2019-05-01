@@ -47,7 +47,7 @@ We can simply break the Qurey and get the passwrd by entering the following in t
 
 Enter the above string in both the fields and we get the flag
 
-![14 flag](https://mbilalrizwan.github.io/MyCtfWriteups/assets/images/overthewire/natas14flag.png)
+![14 flag]({{ site.giturl }}/MyCtfWriteups/assets/images/overthewire/natas14flag.png)
 
 
 
@@ -55,4 +55,4 @@ Enter the above string in both the fields and we get the flag
 
 Simple blind sql injection exploitation you'll get the following flag 
 
-![15 flag](https://mbilalrizwan.github.io/MyCtfWriteups/assets/images/overthewire/natas15flag.png)
+![15 flag]({{ site.giturl }}/MyCtfWriteups/assets/images/overthewire/natas15flag.png)

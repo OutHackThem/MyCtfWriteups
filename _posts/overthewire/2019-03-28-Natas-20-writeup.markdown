@@ -111,4 +111,4 @@ Final payload
 
 `http://natas20.natas.labs.overthewire.org/index.php?name=test%0D%0Aadmin%201%0D%0A`
 
-![flag](https://mbilalrizwan.github.io/MyCtfWriteups/assets/images/overthewire/natas20flag.png)
+![flag]({{ site.giturl }}/MyCtfWriteups/assets/images/overthewire/natas20flag.png)
