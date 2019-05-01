@@ -12,11 +12,7 @@ tags: [web,overthewire]
 
 Visit this [link](http://natas11.natas.labs.overthewire.org/) to go to level 11 for which you’ll need the password from the previous level.
 You'll land here
-<<<<<<< HEAD
-{{ site.giturl }}({% link /MyCtfWriteups/assets/images/overthewire/natas11main.png %})
-=======
-![main]({{site.giturl}}/MyCtfWriteups/assets/images/overthewire/natas11main.png)
->>>>>>> parent of 4c75969... Update 2019-03-20-Natas-11-writeup.markdown
+![main]({{ site.giturl }}/MyCtfWriteups/assets/images/overthewire/natas11main.png)
 
 Clicking the view Sourcecode link we see the following code
 
