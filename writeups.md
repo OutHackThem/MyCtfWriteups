@@ -16,8 +16,19 @@ permalink: /writeups
     </li>
   {% endfor %}
 </ul>
+<br>
 
-_yay_
+# Vulnhub
+
+## Natas
+<ul>
+  {% for post in site.categories.vulnhub %}
+    <li>
+      <a href="{{ site.url }}/{{ post.url }}">{{ post.title }}</a> -> {{ post.date | date: "%-d %B %Y" }}
+    </li>
+  {% endfor %}
+</ul>
+
 
 <!-- 
 <ul>
