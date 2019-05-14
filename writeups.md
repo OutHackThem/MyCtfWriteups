@@ -6,9 +6,8 @@ permalink: /writeups
 
 [<--back]({{ site.url }}{{ site.baseurl }})
 <br>
-# OverTheWire
+## OverTheWire
 
-## Natas
 <ul>
   {% for post in site.categories.overthewire %}
     <li>
@@ -18,9 +17,8 @@ permalink: /writeups
 </ul>
 <br>
 
-# Vulnhub
+## Vulnhub
 
-## Natas
 <ul>
   {% for post in site.categories.vulnhub %}
     <li>
