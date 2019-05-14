@@ -4,6 +4,7 @@ title: Stapler 1
 date: 2019-05-14
 author: th3-3inst3in
 comments: true
+categories: vulnhub
 tags: [ctf,vulnhub]
 ---
 
