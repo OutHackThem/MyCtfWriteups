@@ -27,7 +27,14 @@ permalink: /writeups
   {% endfor %}
 </ul>
 
+<br>
 
+<ul>
+{% for category in site.categories %}
+<li>"{{ category | first }}"{% unless forloop.last %},{% endunless %}</li>
+{% endfor %}
+
+</ul>
 <!-- 
 <ul>
   {% for post in site.posts %}
