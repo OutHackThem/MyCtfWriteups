@@ -20,21 +20,21 @@ permalink: /writeups
 ## Vulnhub
 
 <ul>
-  {% for post in post.categories.vulnhub %}
+  {% for post in site.categories.vulnhub %}
     <li>
       <a href="{{ site.url }}/{{ post.url }}">{{ post.title }}</a> -> {{ post.date | date: "%-d %B %Y" }}
     </li>
   {% endfor %}
 </ul>
 
-<br>
+<!-- <br>
 
 <ul>
 {% for category in site.categories %}
 <li>"{{ category | first }}"{% unless forloop.last %},{% endunless %}</li>
 {% endfor %}
 
-</ul>
+</ul> -->
 <!-- 
 <ul>
   {% for post in site.posts %}
