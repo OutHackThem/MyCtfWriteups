@@ -8,7 +8,7 @@ categories: vulnhub
 tags: [ctf,vulnhub]
 ---
 
-##Stapler 1 vulnhub
+## Stapler 1 vulnhub
 
 After configuring the Stapler VM first step is to find out its IP.We simply do that by running net discover 
 
