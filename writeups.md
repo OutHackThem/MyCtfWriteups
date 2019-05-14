@@ -20,7 +20,7 @@ permalink: /writeups
 ## Vulnhub
 
 <ul>
-  {% for post in page.categories.vulnhub %}
+  {% for post in post.categories.vulnhub %}
     <li>
       <a href="{{ site.url }}/{{ post.url }}">{{ post.title }}</a> -> {{ post.date | date: "%-d %B %Y" }}
     </li>
