@@ -27,6 +27,15 @@ permalink: /writeups
   {% endfor %}
 </ul>
 
+## Hack The Box
+
+<ul>
+  {% for post in site.categories.htb %}
+    <li>
+      <a href="{{ site.url }}/{{ post.url }}">{{ post.title }}</a> -> {{ post.date | date: "%-d %B %Y" }}
+    </li>
+  {% endfor %}
+</ul>
 <!-- <br>
 
 <ul>
