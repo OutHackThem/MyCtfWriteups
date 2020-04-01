@@ -11,8 +11,8 @@ tags: [windows,htb]
 ## Legacy writeup
 
 Hi there, how you doin ?
-For a long long time now I've been avoiding Hack the box cause I am sort of an addict for CTFs and I've heard that htb is one of the best playgrounds out there. I was just waiting for a time period where I could just sit down and do this without any distractions and what better time then this COVID-19 pendemic when everyone is quarantined.
-Thought I'd star with retired with easy retired machines which would get me warmed up so here we are Legacy writeup.
+For a long long time now I've been avoiding Hack the box cause I am sort of an addict for CTFs and I've heard that htb is one of the best playgrounds out there. I was just waiting for a time period where I could just sit down and do this without any distractions and what better time then this COVID-19 pendemic when everyone is quarantined (Hope Everyone survives this and be well)
+Thought I'd start with retired easy machines which would get me warmed up so here we are Legacy writeup.
 
 
 ![main]({{ site.giturl }}/MyCtfWriteups/assets/images/htb/Legacy/cover.png)
@@ -65,13 +65,16 @@ Host script results:
 
 ```
 
-#### Enumeration
+<br>
+
+### Enumeration
 
 - I ran another nmap scan `nmap -p 139,445 --script smb-vuln* 10.10.10.4` It gave me the following result sayign the SMBv1 is vulnerable to remote code execution
 
 ![smb-nmap-output]({{ site.giturl }}/MyCtfWriteups/assets/images/htb/Legacy/smb.png)
 
-#### Exploitation
+
+### Exploitation
 
 Quick google search and I found out that msf can be used to gain a shell. Used the following exploit and got an initial shell. 
 After I ran getuid found out I had been dropped on to the NT Authority shell.
