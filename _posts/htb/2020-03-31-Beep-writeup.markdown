@@ -8,7 +8,7 @@ categories: htb
 tags: [Linux,htb]
 ---
 
-## Blue writeup
+## Beep writeup
 
 Easy Linux machine
 

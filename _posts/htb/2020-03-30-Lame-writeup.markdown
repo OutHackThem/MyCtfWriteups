@@ -8,7 +8,7 @@ categories: htb
 tags: [Linux,htb]
 ---
 
-## Legacy writeup
+## Lame writeup
 
 Easy linux machine
 
