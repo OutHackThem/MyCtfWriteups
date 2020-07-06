@@ -1,6 +1,6 @@
 ---
 layout: post
-title: W1R3S: 1.0.1
+title: W1R3S
 date: 2020-07-06
 author: th3-3inst3in
 comments: true
@@ -14,7 +14,8 @@ After configuring the W1R3S: 1.0.1 and getting its ip through  nmap. I quicky ra
 
 #### Nmap results
 
-```bash
+```perl
+
 PORT     STATE SERVICE VERSION
 21/tcp   open  ftp     vsftpd 2.0.8 or later
 | ftp-anon: Anonymous FTP login allowed (FTP code 230)
@@ -78,6 +79,7 @@ New FTP Server For W1R3S.inc
 #
 #
 SXQgaXMgZWFzeSwgYnV0IG5vdCB0aGF0IGVhc3kuLg==
+
 ```
 I decoded the base64 string and decoded to `It is easy, but not that easy..`
 
