@@ -2,7 +2,7 @@
 layout: post
 title: Blue
 date: 2020-03-30
-author: th3-3inst3in
+author: the-bilal-rizwan
 comments: true
 categories: htb
 tags: [Windows,htb]

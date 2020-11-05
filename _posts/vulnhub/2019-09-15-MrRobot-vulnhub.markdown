@@ -2,7 +2,7 @@
 layout: post
 title: Mr-Robot 1
 date: 2019-09-15
-author: th3-3inst3in
+author: the-bilal-rizwan
 comments: true
 categories: vulnhub
 tags: [ctf,vulnhub]
@@ -56,7 +56,7 @@ zip the following php code
 Plugin Name: Shell
 Plugin URI: https://themctfwriteups.com/shells
 Description: This hacks you 
-Author: th3-3inst3in
+Author: the-bilal-rizwan
 Version: 1.0.0
 Author URI: https://thectfwriteups.com/
 */

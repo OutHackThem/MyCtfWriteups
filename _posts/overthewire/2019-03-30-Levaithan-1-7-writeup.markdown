@@ -2,7 +2,7 @@
 layout: post
 title: Leviathan 1-7 Writeup
 date: 2019-03-30
-author: th3-3inst3in
+author: the-bilal-rizwan
 comments: true
 categories: overthewire
 tags: [web,overthewire]

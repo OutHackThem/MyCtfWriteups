@@ -2,7 +2,7 @@
 layout: post
 title: W1R3S
 date: 2020-07-06
-author: th3-3inst3in
+author: the-bilal-rizwan
 comments: true
 categories: vulnhub
 tags: [ctf,vulnhub]
