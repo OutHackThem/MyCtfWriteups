@@ -2,7 +2,7 @@
 layout: post
 title: Stapler 1
 date: 2019-05-14
-author: the-bilal-rizwan
+author: OutHackThem
 comments: true
 categories: vulnhub
 tags: [ctf,vulnhub]

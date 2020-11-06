@@ -2,7 +2,7 @@
 layout: post
 title: Grandpa without metasploit
 date: 2020-04-1
-author: the-bilal-rizwan
+author: OutHackThem
 comments: true
 categories: htb
 tags: [Windows,htb]

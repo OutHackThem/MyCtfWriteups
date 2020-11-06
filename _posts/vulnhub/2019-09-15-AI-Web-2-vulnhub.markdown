@@ -2,7 +2,7 @@
 layout: post
 title: AI Web 2
 date: 2019-09-15
-author: the-bilal-rizwan
+author: OutHackThem
 comments: true
 categories: vulnhub
 tags: [ctf,vulnhub]

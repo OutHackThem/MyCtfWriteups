@@ -2,7 +2,7 @@
 layout: post
 title: Devel
 date: 2020-03-30
-author: the-bilal-rizwan
+author: OutHackThem
 comments: true
 categories: htb
 tags: [Windows,htb]

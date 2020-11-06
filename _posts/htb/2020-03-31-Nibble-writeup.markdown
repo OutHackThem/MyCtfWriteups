@@ -2,7 +2,7 @@
 layout: post
 title: Nibble
 date: 2020-03-31
-author: the-bilal-rizwan
+author: OutHackThem
 comments: true
 categories: htb
 tags: [Linux,htb]

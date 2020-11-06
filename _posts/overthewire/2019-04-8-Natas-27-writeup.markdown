@@ -2,7 +2,7 @@
 layout: post
 title: Natas 27 Writeup
 date: 2019-04-8
-author: the-bilal-rizwan
+author: OutHackThem
 comments: true
 categories: overthewire
 tags: [web,overthewire]
